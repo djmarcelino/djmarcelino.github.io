@@ -8,10 +8,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <meta name="author" content="Swarm Software Pte. Ltd."/>
 		<link rel="shortcut icon" href="">
+        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:400,500,600' >
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700,900" > 
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/menu-btn.css">
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' >
-        <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Lato:200,400,600' >
         <script src="js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
@@ -33,24 +33,26 @@
     </head>
     <body>
 <!-----HEADER-START----->
-        <div id="overlay" class="overlay">
-            <div class="overlay-content">
-                <a class="hvr-underline-from-center" href="index.html">Work</a><br />
-                <a class="hvr-underline-from-center" href="/about">About Us</a><br />
-                <a class="hvr-underline-from-center" href="/solutions">Solutions</a><br />
-                <a class="hvr-underline-from-center" href="/services">Services</a>
+        <div id="overlay" class="overlay" style="background-image: url('img/programming-wallpaper-1920x1080.jpg');">
+            <div id="overlayoverlay" class="overlayoverlay" style="width:100%; height:100%; background-color: rgba(255, 255, 255, 0.9);">
+                <div class="overlay-content">
+                    <a class="hvr-underline-from-center menu-item" href="index.html">Work</a><br>
+                    <a class="hvr-underline-from-center menu-item" href="/about">About Us</a><br>
+                    <a class="hvr-underline-from-center menu-item" href="/solutions">Solutions</a><br>
+                    <a class="hvr-underline-from-center menu-item" href="/services">Services</a>
+                </div>
             </div>
         </div>
         <div class="headerwrapper" id="headerwrapper">
             <div class="header" id="header">
                 <div class="header_left">
-                    <a id="logo" href="index.html"><span style="color:#F1494C; font-size:1.1em;">∂ </span>Swarm Software<span id="trademark"> ™</span></a>
+                    <a href="index.html"><p id="logo"><!--<span style="color:#E39D58; font-size:1.3em; line-height:33px;">∂ </span>-->Swarm Software</p></a>
                 </div>
                 <div class="header_right">
                     <div id="menu_btn" class="menu_btn" onclick="menuSpin(this); openNav();">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
+                        <div class="bar1" id="bar1"></div>
+                        <div class="bar2" id="bar2"></div>
+                        <div class="bar3" id="bar3"></div>
                     </div>
                 </div>
                 <div style="clear: both;"></div>
@@ -58,11 +60,12 @@
         </div>
 <!-----HEADER-END----->
 <!-----BANNER-START----->
-        
-        <div style="background-image: url('img/9504055863_8658ab9a59_o.jpg');background-size: cover; background-position: center; background-repeat:no-repeat;  background-attachment: fixed; width:100%; height:100%; box-shadow: inset 0 0 5em 1em #000; ">
-            <div style="background-color: rgba(0, 0, 0, 0.4); width: 100%; height: 100%;">
+        <div style="background-image: url('img/sg01bw.jpeg');background-size: cover; background-position: center; background-repeat:no-repeat;  background-attachment: fixed; width:100%; height:50vh; box-shadow: inset 0 0 5em 1em #000; border-bottom:1px solid #E39D58;">
+            <div style="background-color: rgba(39, 45, 61, 0.8); width: 100%; height: 100%;">
                 <div class="bannertext">
-                    <h1 id="tagline">a <span style="color: #F1494C;">Singaporean</span> company represented globally in Asia, Europe and North America.</h1>
+                    <!--
+                    <h1 id="tagline">a <span style="color: #E39D58;">Singaporean</span> company represented globally in Asia, Europe and North America.</h1>
+                    -->
                 </div>
             </div>
         </div>
@@ -76,22 +79,24 @@
         </div>
 <!-----GRID-END----->
 <!-----FOOTER-START----->
-        <div class="footer">
-            <div style="width:90%; margin:0 auto;">
-                <div id="footer_logo">
-                    <p>Swarm Software</p>
-                    <ul>
-                        <li class="footernav"><a class="hvr-underline-from-center" href="index.html">Work</a></li>
-                        <li class="footernav"><a class="hvr-underline-from-center" href="/about">About</a></li>
-                        <li class="footernav"><a class="hvr-underline-from-center" href="/solutions">Solutions</a></li>
-                        <li class="footernav"><a class="hvr-underline-from-center" href="/services">Services</a></li>
-                    </ul>
+        
+        <div class="googlemapwrapper" onClick="style.pointerEvents='none'">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.8229777590523!2d103.85323625087211!3d1.279842099061946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da190fe6a6865f%3A0xbef24f5af3be2578!2s18+Marina+Blvd%2C+Singapore+018980!5e0!3m2!1sen!2sph!4v1484313624845" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="footerwrapper">
+            <div class="footer">
+                <div class="footergrid">
+                    <div class="footergridcontent"><p><span style="color: #E39D58">Swarm Software</span><br />Swarm Software Pte. Ltd.,<br />Represented globally in<br />Asia, Europe and<br>North America.<br /></p></div>
                 </div>
-                <div class="footer_left" style="width:auto; margin:0 auto; text-align:center; padding-top:5px;">
-                    <p>Global services in Asia, Europe, and North America<br />© 2017 Swarm Software Pte. Ltd.</p>
+                <div class="footergrid">
+                    <div class="footergridcontent"><p><span style="color: #E39D58">Head Office</span><br />Singapore Headquarters<br />18 Marina Boulevard #35-07<br />Singapore, 018980<br />UEN No: 201004935M</p></div>
                 </div>
-  
+                <div class="footergrid">
+                    <div class="footergridcontent"><p><span style="color: #E39D58">Contact</span><br />info@swarmsoftware.com<br />+1-800-XXX-XXXX</p></div>
+                </div>
+                <div style="clear: both;"></div>
             </div>
+            <div style="background-color: #141618; width:auto; height:auto; padding:30px 0; text-align:center; border-top: 1px solid rgb(100,100,100);"><p>© 2017 Swarm Software Pte. Ltd.</p></div>
         </div>
 <!-----FOOTER-END----->
     </body>
