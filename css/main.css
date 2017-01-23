@@ -46,7 +46,7 @@ body {
 }
 
 .header {
-    width: 85%;
+    width: 90%;
     height: auto;
     padding: 32px 0;
     left: 0;
@@ -57,7 +57,7 @@ body {
 
 @media screen and (min-width: 360px) {
     div.header {
-        width: 80%;
+        width: 60%;
         padding: 32px 0;
     }
 }
@@ -82,7 +82,7 @@ body {
 #logo {
     font-family: 'Raleway', 'Arial', sans-serif;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 500;
     text-decoration: none;
     line-height: 33px;
     -webkit-transition: font-size 1s; /* Safari */
@@ -175,10 +175,9 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
 
 
 .gridcontainer {
-    margin: 0;
     width: auto;
     height: auto;
-    background-color: #8bacbd;
+    background-color: #ffffff;
 }
 
 @media screen and (min-width: 481px) {
@@ -216,7 +215,7 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
 .bannertext {
     font-family: 'Lato', sans-serif;
     color: #fff;
-    width: 80%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     height: 100vh;
@@ -263,30 +262,29 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
 
 /* Footer Start */
 
-.googlemapwrapper {
+
+#googlemapwrapper {
     width:auto;
     height:400px;
     border-top: 1px solid #141618;
 }
 
 .footerwrapper {
-    background-color:rgb(39, 45, 61);
+    background-color:#2B3433;
     width:auto;
     height:auto;
-    font-size: 1rem;
+    font-size: .8rem;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     color: #ffffff;
     text-transform: uppercase;
-    border-top: 2px solid #E39D58;
+    border-top: 2px solid #F47920;
 }
 
 .footer {
-    width:80%;
+    width:60%;
     height:auto;
     margin: 0 auto;
-    padding-top:50px;
-    padding-bottom:50px;
 }
 
 .footergrid {
@@ -301,39 +299,63 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
     height:auto;
     text-align: left;
     display: inline-block;
+    padding-top:3em;
+    padding-bottom:3em;
+}
+
+.footergridcontent span {
+    color: #F47920;
+}
+
+#footerbottom {
+    background-color: #fff;
+    width:auto;
+    height:auto;
+    padding:2em 0;
+    border-top: 1px solid rgb(100,100,100);
+    color:#2B3433;
+    text-align:center;
 }
 
 /* Footer End */
 
-@media screen and (max-width: 768px) {
-    .footergrid {
-        width:100%;
-        float:none;
-        display: block;
-    }
+@media screen and (max-width: 980px) {
     .footer {
-    width:90%;
+        width: 80%;
+    }
+@media screen and (max-width: 768px) {
+    .footer {
+        width: 90%;
+    }
+@media screen and (max-width: 650px) {
+    .footergrid {
+        width: 100%;
+        float: none;
     }
     .footergridcontent {
-    text-align: center;
-    display: inline-block;
-    padding-bottom: 20px;
+        display: block;
+        text-align: center;
+        padding-top:0;
+        padding-bottom:3em;
+    }
+    #footergrid1 {
+        padding-top:3em;
     }
 }
-
-
-
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 @media screen and (min-width: 481px) {
     h1#tagline {
         font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 641px) {
-    h1#tagline {
-        font-size: 4rem;
     }
 }
 
@@ -353,7 +375,7 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: rgb(39, 45, 61);
+  background: #F47920;
   height: .06em;
   -webkit-transition-property: left, right;
   transition-property: left, right;
