@@ -1,6 +1,5 @@
 .overlay {
-    background-image: url("../img/programming-wallpaper-1920x1080.jpg");
-    background-color: rgb(59,59,59);
+    background-color: rgba(43,52,51,0.7);
     position: fixed;
     z-index: 8;
     top: 0;
@@ -15,9 +14,9 @@
 }
 
 .overlayoverlay {
-    width:100%;
+    width:400px;
     height:100%;
-    background-color: rgba(20,22,24,0.9);
+    margin:0 auto;
     }
 
 .overlay a {
@@ -27,21 +26,27 @@
     text-decoration: none;
     text-transform: lowercase;
     font-size: 2.2rem;
-    display: inlineblock;
+    display: block;
     transition: 0.4s;
+    margin-bottom:
+    background-color: #F47920;
+    height:100px;
+    
 }
 
 @media screen and (min-width: 768px) {
     .overlay a {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 }
 
 .overlay-content {
-    position: fixed;
-    z-index: 9;
+    padding-top: 250px;
+    background-color: rgba(9,9,9,0.9);
+    width: 400px;
     height: 100%;
+    z-index: 9;
     text-align: center;
     top: 30%;
-    width: 100%;
+    margin: 0 auto;
 }

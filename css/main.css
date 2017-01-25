@@ -40,7 +40,7 @@ body {
 }
 
 .active {
-    background-color: rgb(39, 45, 61);
+    background-color: rgba(34,34,34,0.7);
     padding: 0px 0;
     transition: all 0.6s;
 }
@@ -48,7 +48,7 @@ body {
 .header {
     width: 90%;
     height: auto;
-    padding: 32px 0;
+    padding: 24px 0;
     left: 0;
     right: 0;
     transition: padding 1s;
@@ -58,7 +58,6 @@ body {
 @media screen and (min-width: 360px) {
     div.header {
         width: 60%;
-        padding: 32px 0;
     }
 }
 
@@ -220,20 +219,26 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
     margin-right: auto;
     height: 100vh;
     text-align: left;
-    font-size: 1.2rem;
+    font-size: .9rem;
+    padding-top: 30vh;
+    width: 80%;
 }
 
 @media screen and (min-width: 481px) {
     div.bannertext {
-        padding-top: 10%;
+        padding-top: 25vh;
         padding-bottom: 5%;
+        font-size: 1.2rem;
+        width: 60%;
     }
 }
 
 @media screen and (min-width: 641px) {
     div.bannertext {
-        padding-top: 10%;
+        padding-top: 25vh;
         padding-bottom: 5%;
+        font-size: 1.2rem;
+        width: 60%;
     }
 }
 
@@ -277,6 +282,7 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
     font-family: 'Lato', sans-serif;
     font-weight: 600;
     color: #ffffff;
+    line-height: 150%;
     text-transform: uppercase;
     border-top: 2px solid #F47920;
 }
@@ -336,10 +342,10 @@ a:link#logo, a:visited#logo, a:hover#logo, a:active#logo {
         display: block;
         text-align: center;
         padding-top:0;
-        padding-bottom:3em;
+        padding-bottom:2em;
     }
     #footergrid1 {
-        padding-top:3em;
+        padding-top:2em;
     }
 }
     

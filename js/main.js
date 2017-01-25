@@ -17,7 +17,7 @@ if(document.getElementById("overlay").style.visibility == "visible")
         $('#header').css('padding', '12px 0');
     } else {
         $(".headerwrapper").removeClass("active");
-        $('#header').css('padding', '32px 0');
+        $('#header').css('padding', '24px 0');
     }
 
 }
@@ -29,7 +29,7 @@ else
     document.getElementById("bar1").style.backgroundColor = "#F47920";
     document.getElementById("bar2").style.backgroundColor = "#F47920";
     document.getElementById("bar3").style.backgroundColor = "#F47920";
-    $('#header').css('padding', '32px 0');
+    $('#header').css('padding', '24px 0');
     $(".headerwrapper").removeClass("active");
 }}
 
