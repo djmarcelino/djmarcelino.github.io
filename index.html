@@ -26,11 +26,13 @@
                     $('#header').css('padding', '24px 0');
                 }
             });
+            $(this).scrollTop(0);
         }); 
         </script>
     </head>
     <body>
 <!-----HEADER-START----->
+        <!--
         <div id="overlay" class="overlay">
             <div id="overlayoverlay" class="overlayoverlay">
                 <div class="overlay-content">
@@ -41,13 +43,14 @@
                 </div>
             </div>
         </div>
+        -->
         <div class="headerwrapper" id="headerwrapper">
             <div class="header" id="header">
                 <div class="header_left">
                     <a href="index.html"><p id="logo"><!--<span style="color:#F47920; font-size:1.3em; line-height:33px;">∂ </span>-->Swarm Software</p></a>
                 </div>
                 <div class="header_right">
-                    <div id="menu_btn" class="menu_btn" onclick="menuSpin(this); openNav();">
+                    <div id="menu_btn" class="menu_btn" onclick="menuSpin(this);">
                         <div class="bar1" id="bar1"></div>
                         <div class="bar2" id="bar2"></div>
                         <div class="bar3" id="bar3"></div>
@@ -58,33 +61,48 @@
         </div>
 <!-----HEADER-END----->
 <!-----BANNER-START----->
-        <div style="background-image: url('img/programming-wallpaper-1920x1080.jpg');background-size: cover; background-position: center; background-repeat:no-repeat;  background-attachment: fixed; width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:1px solid #F47920;">
+        <div style="background-image: url('img/programming-wallpaper-1920x1080.jpg');background-size: cover; background-position: center; background-repeat:no-repeat;  background-attachment: fixed; width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:2px solid #F47920;">
             <div style="background-color: rgba(20,22,24,0.8); width: 100%; height: 100%;">
                 <div class="bannertext">
-                    <h1 id="tagline">a <span style="color: #F47920;">Singaporean</span> company represented globally in Asia, Europe and North America.</h1>
+                    <h1 id="tagline">a <span style="color: #F47920;">Singaporean</span> company represented globally in Asia, Europe, and North America.</h1>
                 </div>
             </div>
         </div>
 <!-----BANNER-END----->
 <!-----GRID-START----->
-<div class="gridcontainer">
-    <div style="width:60%; height:auto; margin:0 auto; background-color:##ffffff; font-size: .95rem; font-family: 'Lato', sans-serif; font-weight: 600; color: #ffffff; text-transform: none; padding: 20px 0;">
-        <div style="width:49%; height:500px; background-color:#333; float:left; background-image: url('https://static.pexels.com/photos/136134/pexels-photo-136134.jpeg'); background-size:cover; margin-right: 2%;"></div>
-        <div style="width:49%; height:500px; background-color:#333; float:left; background-image: url('https://images.pexels.com/photos/90807/pexels-photo-90807.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb'); background-size:cover;"></div>
-        <div style="width:100%; height:500px; background-color:#333; float:left; background-image: url('https://static.pexels.com/photos/29781/pexels-photo-29781.jpg'); background-size:cover; margin-top:20px;"></div>
-        <div style="clear:both;"></div>
-        
-        
-        <div></div>
-        <div></div>
-        <div></div>
-        
-        
-        
-        
-    </div>
-</div>
+        <div class="gridcontainerwrapper">
+            <div class="gridcontainer">
+                <a href="">
+                    <div class="griditemwrapper" style="margin-right: 2%;">
+                        <div class="griditemwrapper2 gray" style="background-image: url('https://static.pexels.com/photos/136134/pexels-photo-136134.jpeg');">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="griditemwrapper" style="margin-right: 2%;">
+                        <div class="griditemwrapper2 gray" style="background-image: url('https://static.pexels.com/photos/29781/pexels-photo-29781.jpg');">
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="griditemwrapper">
+                        <div class="griditemwrapper2 gray" style="background-image: url('https://static.pexels.com/photos/29781/pexels-photo-29781.jpg');">
+                        </div>
+                    </div>
+                </a>
+                <div style="clear:both;"></div>
+            </div>
+        </div>
 <!-----GRID-END----->
+<!-----CLIENTS-START----->
+        <div style="background-image: url('img/code-wallpaper-38.jpeg');background-size: cover; background-position: center; background-repeat:no-repeat;  background-attachment: fixed; width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:2px solid #F47920;">
+            <div style="background-color: rgba(20,22,24,0.8); width: 100%; height: 100%;">
+                <div class="bannertext">
+
+                </div>
+            </div>
+        </div>
+<!-----CLIENTS-END----->   
 <!-----FOOTER-START----->
         <div id="googlemapwrapper">
             <script async defer
