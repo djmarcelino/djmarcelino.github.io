@@ -15,6 +15,7 @@
         <script src="js/main.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
         <script>
         $(document).ready(function(){
             $(window).on("scroll", function() {
@@ -26,13 +27,15 @@
                     $('#header').css('padding', '24px 0');
                 }
             });
-            $(this).scrollTop(0);
+            document.getElementById('clientlogo1').draggable = false;
+            document.getElementById('clientlogo2').draggable = false;
+            document.getElementById('clientlogo3').draggable = false;
         }); 
+        
         </script>
     </head>
     <body>
 <!-----HEADER-START----->
-        <!--
         <div id="overlay" class="overlay">
             <div id="overlayoverlay" class="overlayoverlay">
                 <div class="overlay-content">
@@ -43,14 +46,13 @@
                 </div>
             </div>
         </div>
-        -->
         <div class="headerwrapper" id="headerwrapper">
             <div class="header" id="header">
                 <div class="header_left">
                     <a href="index.html"><p id="logo"><!--<span style="color:#F47920; font-size:1.3em; line-height:33px;">∂ </span>-->Swarm Software</p></a>
                 </div>
                 <div class="header_right">
-                    <div id="menu_btn" class="menu_btn" onclick="menuSpin(this);">
+                    <div id="menu_btn" class="menu_btn" onclick="menuSpin(this); ">
                         <div class="bar1" id="bar1"></div>
                         <div class="bar2" id="bar2"></div>
                         <div class="bar3" id="bar3"></div>
@@ -61,8 +63,11 @@
         </div>
 <!-----HEADER-END----->
 <!-----BANNER-START----->
-        <div style="background-image: url('img/programming-wallpaper-1920x1080.jpg');background-size: cover; background-position: center; background-repeat:no-repeat;  width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:2px solid #F47920;">
-            <div style="background-color: rgba(20,22,24,0.8); width: 100%; height: 100%;">
+        <div style="background-size: cover; background-position: center; background-repeat:no-repeat;  width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:2px solid #F47920; overflow:none;">
+            <div style="background-color: rgba(20,22,24,0.8); width: 100%; height: 100%; position:relative;">
+            <video autoplay loop style="width:100vw; position:absolute; right:0; left:0; bottom:-300px; z-index:-1;">
+            <source src="video/563397345.mp4" type="video/mp4">
+            </video>
                 <div class="bannertext">
                     <h1 id="tagline">a <span style="color: #F47920;">Singaporean</span> company represented globally in Asia, Europe, and North America.</h1>
                 </div>
@@ -73,20 +78,20 @@
         <div class="gridcontainerwrapper">
             <div class="gridcontainer">
                 <a href="">
-                    <div class="griditemwrapper" style="margin-right: 2%;">
-                        <div class="griditemwrapper2 gray" style="background-image: url('https://static.pexels.com/photos/136134/pexels-photo-136134.jpeg');">
+                    <div class="griditemwrapper1" style="margin-right: 2%;">
+                        <div class="griditem" style="background-image: url('img/about-bg.jpeg');">
                         </div>
                     </div>
                 </a>
                 <a href="">
-                    <div class="griditemwrapper" style="margin-right: 2%;">
-                        <div class="griditemwrapper2 gray" style="background-image: url('https://static.pexels.com/photos/29781/pexels-photo-29781.jpg');">
+                    <div class="griditemwrapper2" style="margin-right: 2%;">
+                        <div class="griditem" style="background-image: url('img/services-bg.jpeg');">
                         </div>
                     </div>
                 </a>
                 <a href="">
-                    <div class="griditemwrapper">
-                        <div class="griditemwrapper2 gray" style="background-image: url('https://static.pexels.com/photos/29781/pexels-photo-29781.jpg');">
+                    <div class="griditemwrapper3">
+                        <div class="griditem" style="background-image: url('img/solutions-bg.jpeg');">
                         </div>
                     </div>
                 </a>
@@ -95,10 +100,19 @@
         </div>
 <!-----GRID-END----->
 <!-----CLIENTS-START----->
-        <div style="background-image: url('img/code-wallpaper-38.jpeg');background-size: cover; background-position: center; background-repeat:no-repeat;  background-attachment: fixed; width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:2px solid #F47920;">
-            <div style="background-color: rgba(20,22,24,0.8); width: 100%; height: 100%;">
-                <div class="bannertext">
-
+        <div id="clientwrapper">
+            <div id="clientoverlay">
+                <div id="clientgridcontainer">
+                    <div id="clientheader"><p>Our Clients</p></div>
+                    <div class="clientgrid">
+                    <img id="clientlogo1" src="img/1000px-Juniper_Networks_logo.png" alt="1000px-Juniper_Networks_logo.png" style="width: 50%; max-height: 100%;">
+                    </div>
+                    <div class="clientgrid">
+                    <img id="clientlogo2" src="img/Apple_Logo_Solid_White.png" alt="Apple_Logo_Solid_White.png" style="width: 20%; max-height: 100%;">
+                    </div>
+                    <div class="clientgrid">
+                    <img id="clientlogo3" src="img/asdwsdfff.png" alt="Apple_Logo_Solid_White.png" style="width: 40%; max-height: 100%;">
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 .overlay {
-    background-color: rgba(43,52,51,0.7);
+    background-color: #111;
     position: fixed;
     z-index: 8;
     top: 0;
@@ -13,23 +13,17 @@
     transition: opacity .4s;
 }
 
-.overlayoverlay {
-    width:400px;
-    height:100%;
-    margin:0 auto;
-    }
+
 
 .overlay a {
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     color: #F47920;
     text-decoration: none;
-    text-transform: lowercase;
+    text-transform: uppercase;
     font-size: 2.2rem;
     display: block;
     transition: 0.4s;
-    margin-bottom:
-    background-color: #F47920;
     height:100px;
     
 }
@@ -42,7 +36,6 @@
 
 .overlay-content {
     padding-top: 250px;
-    background-color: rgba(9,9,9,0.9);
     width: 400px;
     height: 100%;
     z-index: 9;
