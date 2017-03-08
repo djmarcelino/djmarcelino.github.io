@@ -13,6 +13,7 @@
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/menu-btn.css">
         <script src="js/main.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
@@ -20,124 +21,107 @@
         $(document).ready(function(){
             $(window).on("scroll", function() {
                 if($(window).scrollTop() > 1) {
-                    $(".headerwrapper").addClass("active");
-                    $('#header').css('padding', '12px 0');
+                    document.getElementById("headerwrapper").style.backgroundColor = "rgba(34,34,34,0.7)";
+                    document.getElementById("logo").style.color = "#FFFFFF";
+                    document.getElementById("header-right").style.color = "#FFFFFF";
+                    document.getElementById("bar1").style.backgroundColor = "#FFFFFF";
+                    document.getElementById("bar2").style.backgroundColor = "#FFFFFF";
+                    document.getElementById("bar3").style.backgroundColor = "#FFFFFF";
                 } else {
-                    $(".headerwrapper").removeClass("active");
-                    $('#header').css('padding', '24px 0');
+                    document.getElementById("headerwrapper").style.backgroundColor = "transparent";
+                    document.getElementById("logo").style.color = "#5B5B5B";
+                    document.getElementById("header-right").style.color = "#5B5B5B";
+                    document.getElementById("bar1").style.backgroundColor = "#5B5B5B";
+                    document.getElementById("bar2").style.backgroundColor = "#5B5B5B";
+                    document.getElementById("bar3").style.backgroundColor = "#5B5B5B";
                 }
             });
-            document.getElementById('clientlogo1').draggable = false;
-            document.getElementById('clientlogo2').draggable = false;
-            document.getElementById('clientlogo3').draggable = false;
         }); 
-        
+        </script>
+        <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader").fadeOut("slow");
+        })
         </script>
     </head>
     <body>
+
+        <div class="loader"></div>
+
 <!-----HEADER-START----->
-        <div id="overlay" class="overlay">
-            <div id="overlayoverlay" class="overlayoverlay">
-                <div class="overlay-content">
-                    <a class="hvr-underline-from-center menu-item" href="index.html">Work</a><br>
-                    <a class="hvr-underline-from-center menu-item" href="/about">About Us</a><br>
-                    <a class="hvr-underline-from-center menu-item" href="/solutions">Solutions</a><br>
-                    <a class="hvr-underline-from-center menu-item" href="/services">Services</a>
+        <div id="headerwrapper">
+            <div id="header">
+                <div id="header-left">
+                    <a href="index.html"><span id="logo"><span style="color:#F47920; font-size:1em; line-height:33px;">∂&nbsp;&nbsp;</span>Swarm Software</span></a>
                 </div>
-            </div>
-        </div>
-        <div class="headerwrapper" id="headerwrapper">
-            <div class="header" id="header">
-                <div class="header_left">
-                    <a href="index.html"><p id="logo"><!--<span style="color:#F47920; font-size:1.3em; line-height:33px;">∂ </span>-->Swarm Software</p></a>
-                </div>
-                <div class="header_right">
-                    <div id="menu_btn" class="menu_btn" onclick="menuSpin(this); ">
-                        <div class="bar1" id="bar1"></div>
-                        <div class="bar2" id="bar2"></div>
-                        <div class="bar3" id="bar3"></div>
-                    </div>
+                <div id="header-right">
+                    <ul style="list-style-type: none; width:100%; height:33px;">
+                        <li style="float: right; display: block;"><a href="#">Contact</a></li>
+                        <li style="float: right; margin-right:12px; display: block;"><a href="#">Solutions</a></li>
+                        <li style="float: right; margin-right:12px; display: block;"><a href="#">Services</a></li>
+                        <li style="float: right; margin-right:12px; display: block;"><a href="#">Home</a></li>
+                        <div style="clear: both;"></div>
+                    </ul>
                 </div>
                 <div style="clear: both;"></div>
             </div>
         </div>
 <!-----HEADER-END----->
 <!-----BANNER-START----->
-        <div style="background-size: cover; background-position: center; background-repeat:no-repeat;  width:100%; height:50vh; min-height:480px; box-shadow: inset 0 0 5em 1em #000; border-bottom:2px solid #F47920; overflow:none;">
-            <div style="background-color: rgba(20,22,24,0.8); width: 100%; height: 100%; position:relative;">
-            <video autoplay loop style="width:100vw; position:absolute; right:0; left:0; bottom:-300px; z-index:-1;">
-            <source src="video/563397345.mp4" type="video/mp4">
-            </video>
-                <div class="bannertext">
-                    <h1 id="tagline">a <span style="color: #F47920;">Singaporean</span> company represented globally in Asia, Europe, and North America.</h1>
+        <div style="width:100%; height:100%; height:60vh; min-height:480px; padding-top:81px; overflow:hidden;">
+            <div style="width:100%; height:100%; background-image:url('img/pexels-photo-25026bw.jpg'); background-size:cover; background-position:center center; margin: 0 auto; border:solid 1px #5b5b5b; position:relative;">
+                <div style="width:100%; height:40%; position:absolute; top:30%; background-color: rgba(20,22,24,0.8);">
+                    <div style="position:absolute; top:30%; bottom:30%; left:15%; right:15%;">
+                        <p style="font-size: 36px; color:#ffffff">a <span style="color: #F47920;">Singaporean</span> company represented globally in Asia, Europe, and North America.</p>
+                    </div>
                 </div>
             </div>
         </div>
 <!-----BANNER-END----->
-<!-----GRID-START----->
-        <div class="gridcontainerwrapper">
-            <div class="gridcontainer">
-                <a href="">
-                    <div class="griditemwrapper1" style="margin-right: 2%;">
-                        <div class="griditem" style="background-image: url('img/about-bg.jpeg');">
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="griditemwrapper2" style="margin-right: 2%;">
-                        <div class="griditem" style="background-image: url('img/services-bg.jpeg');">
-                        </div>
-                    </div>
-                </a>
-                <a href="">
-                    <div class="griditemwrapper3">
-                        <div class="griditem" style="background-image: url('img/solutions-bg.jpeg');">
-                        </div>
-                    </div>
-                </a>
-                <div style="clear:both;"></div>
-            </div>
+        <div style="width:100%; background-color:#fffffff;">
+        <div style="width:80%; height:480px; margin:0 auto;">
+            <div style="background-color:#656565; width:33.33%; height:100%; float:left;"></div>
+            <div style="background-color:#777777; width:33.33%; height:100%; float:left;"></div>
+            <div style="background-color:#656565; width:33.34%; height:100%; float:left;"></div>
+            <div style="clear:both;"></div>
         </div>
-<!-----GRID-END----->
-<!-----CLIENTS-START----->
-        <div id="clientwrapper">
-            <div id="clientoverlay">
-                <div id="clientgridcontainer">
-                    <div id="clientheader"><p>Our Clients</p></div>
-                    <div class="clientgrid">
-                    <img id="clientlogo1" src="img/1000px-Juniper_Networks_logo.png" alt="1000px-Juniper_Networks_logo.png" style="width: 50%; max-height: 100%;">
-                    </div>
-                    <div class="clientgrid">
-                    <img id="clientlogo2" src="img/Apple_Logo_Solid_White.png" alt="Apple_Logo_Solid_White.png" style="width: 20%; max-height: 100%;">
-                    </div>
-                    <div class="clientgrid">
-                    <img id="clientlogo3" src="img/asdwsdfff.png" alt="Apple_Logo_Solid_White.png" style="width: 40%; max-height: 100%;">
-                    </div>
-                </div>
-            </div>
+        <div style="width:80%; height:480px; margin:0 auto;">
+            <div style="background-color:#FFA578; width:33.33%; height:100%; float:left;"></div>
+            <div style="background-color:#FA8759; width:33.33%; height:100%; float:left;"></div>
+            <div style="background-color:#FFA578; width:33.34%; height:100%; float:left;"></div>
+            <div style="clear:both;"></div>
         </div>
-<!-----CLIENTS-END----->   
+        </div>
 <!-----FOOTER-START----->
-        <div id="googlemapwrapper">
-            <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCnoJWsw7Lxba3WKlJO5-GB5Gg1QDbYQdo &callback=initMap">
-            </script>
-        </div>
         <div class="footerwrapper">
-            <div class="footer">
-                <div class="footergrid" id="footergrid1">
-                    <div class="footergridcontent"><p><span>Swarm Software</span><br />Swarm Software Pte. Ltd.,<br />Represented globally in<br />Asia, Europe and<br>North America.<br /></p></div>
+            <!-----CLIENTS-START----->
+            <div id="clientwrapper">
+                <div id="clientoverlay">
+                    <div id="clientgridcontainer">
+                        <div id="clientheader"><p>Our Clients</p></div>
+                        <div class="clientgrid">
+                        <img id="clientlogo1" src="img/1000px-Juniper_Networks_logo.png" alt="1000px-Juniper_Networks_logo.png" style="width: 50%; max-height: 100%;">
+                        </div>
+                        <div class="clientgrid">
+                        <img id="clientlogo2" src="img/Apple_Logo_Solid_White.png" alt="Apple_Logo_Solid_White.png" style="width: 20%; max-height: 100%;">
+                        </div>
+                        <div class="clientgrid">
+                        <img id="clientlogo3" src="img/asdwsdfff.png" alt="Apple_Logo_Solid_White.png" style="width: 40%; max-height: 100%;">
+                        </div>
+                    </div>
                 </div>
-                <div class="footergrid" id="footergrid2">
-                    <div class="footergridcontent"><p><span>Head Office</span><br />Singapore Headquarters<br />18 Marina Boulevard #35-07<br />Singapore, 018980<br />UEN No: 201004935M</p></div>
-                </div>
-                <div class="footergrid" id="footergrid3">
-                    <div class="footergridcontent"><p><span>Contact</span><br />info@swarmsoftware.com<br />+1-800-XXX-XXXX</p></div>
-                </div>
-                <div style="clear: both;"></div>
             </div>
-            <div id="footerbottom"><p>© 2017 Swarm Software Pte. Ltd.</p></div>
+            <!-----CLIENTS-END-----> 
+            <div id="googlemapwrapper">
+                <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key= AIzaSyCnoJWsw7Lxba3WKlJO5-GB5Gg1QDbYQdo &callback=initMap">
+                </script>
+            </div>
+            <div id="footer"><p>© 2017 Swarm Software Pte. Ltd. All Rights Reserved</p></div>
         </div>
 <!-----FOOTER-END----->
     </body>
 </html>
+
+
+
