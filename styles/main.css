@@ -107,6 +107,9 @@ header {
     -webkit-column-count: 2;
             column-count: 2;
   }
+  .modal-body {
+    padding:0!important;
+  }
 }
 
 @media (max-width: 576px) {
@@ -118,12 +121,7 @@ header {
 
 /* Company Brand Style */
 .da-company-brand img {
-  opacity: 0.6;
   width: 90%;
-}
-
-.da-company-brand img:hover {
-  opacity: 1;
 }
 
 /*Contact Style*/
