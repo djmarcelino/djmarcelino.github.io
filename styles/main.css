@@ -4,7 +4,8 @@
   -webkit-box-sizing: border-box!important;
 }
 
-body {
+html, body {
+  font-size: 14px;
   font-family: "Montserrat", sans-serif;
 }
 
