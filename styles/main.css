@@ -23,7 +23,7 @@ header {
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgba(255, 255, 255, 0.75);
+  color: #fff;
   letter-spacing: 1px;
   font-size: 0.95rem;
 }
@@ -148,7 +148,9 @@ header {
 /*Image Gallery Style*/
 .da-gallery .card-columns .card {
   border: none;
-  border-radius: none;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: transparent!important;
 }
 
 @media (max-width: 992px) {
