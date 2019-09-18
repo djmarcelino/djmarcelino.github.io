@@ -163,6 +163,16 @@ header {
   }
 }
 
+@media (min-width: 993px) {
+  .da-gallery .card-columns {
+    -webkit-column-count: 2;
+            column-count: 2;
+  }
+  .modal-body {
+    padding:0!important;
+  }
+}
+
 @media (max-width: 576px) {
   .da-gallery .card-columns {
     -webkit-column-count: 1;
