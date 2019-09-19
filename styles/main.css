@@ -35,7 +35,7 @@ header {
 .underbar {
   width: 0;
   height: 1px;
-  background: #df020a;
+  background: #d2e855;
   bottom: 0;
   position: absolute;
   -webkit-transition: 0.5s ease;
@@ -61,19 +61,19 @@ header {
 .line-mid {
   width: 30px;
   height: 2px;
-  background-color: #df020a;
+  background-color: #d2e855;
   margin: 10px auto;
 }
 .line-left {
   width: 30px;
   height: 2px;
-  background-color: #df020a;
+  background-color: #d2e855;
   margin-right: auto;
 }
 .line-right {
   width: 30px;
   height: 2px;
-  background-color: #df020a;
+  background-color: #d2e855;
   margin-left: auto;
 }
 @media (max-width: 575.98px) {
@@ -142,7 +142,7 @@ header {
 }
 
 .da-team .carousel-indicators .active {
-  background-color: #df020a;
+  background-color: #d2e855;
 }
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
 /*Image Gallery Style*/
