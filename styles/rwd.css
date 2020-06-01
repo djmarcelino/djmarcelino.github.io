@@ -1,0 +1,30 @@
+@media screen and (min-width: 414px) {
+}
+
+@media screen and (min-width: 576px) {
+  .ghost3 {
+    display: initial;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 992px) {
+  .ghost {
+    display: initial;
+  }
+  .ghost2 {
+    display: none;
+  }
+  .mobilelogo {
+    max-width: 120px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+}
+
+@media screen and (min-width: 1500px) {
+}
+
